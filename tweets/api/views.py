@@ -12,6 +12,8 @@ class TweetViewSet(viewsets.GenericViewSet,
     API endpoint that allows users to create, list tweets
     """
     queryset = Tweet.objects.all()
+    print("1")
+
     serializer_class = TweetCreateSerializer
 
     def get_permissions(self):
